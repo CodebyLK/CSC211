@@ -4,7 +4,7 @@
 
 ## 1. Table of Contents
 ### Module 1
-&emsp;[hello.txt](https://github.com/CodebyLK/CSC211/bloc/bcaebd1474b289a28d8ac3ff88962ae1f53f9874/Module1/hello.txt)  
+&emsp;[hello.txt](https://github.com/CodebyLK/CSC211/blob/6a84c459b2bbd45003d197b3378dd4a700969bab/Module1/hello.txt)  
 &emsp;[RandNum.java](https://github.com/CodebyLK/CSC211/blob/bcaebd1474b289a28d8ac3ff88962ae1f53f9874/Module1/RandNum.java)  
 
 
