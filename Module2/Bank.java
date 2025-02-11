@@ -20,10 +20,7 @@ public class Bank {
         this.deposit = deposit;
         this.withdrawal = new double[10];
         this.withdrawal = withdrawal;
-        //this.newTransaction = false;
         this.completionCheck = completionCheck;
-        //this.deposits = deposits;
-        //this.withdrawals = withdrawals;
     }
 
     public Bank(){
@@ -117,12 +114,10 @@ public class Bank {
             deposits[j] = amount;
             j++;
             for(int i = 0; i < deposits.length; i++){
-                //System.out.println(deposits[i]);
                 deposit[i] = deposits[i];
             }
         }
         concludeTransaction(client);
-       // System.out.println("copy: " + deposits[j] + " ; original : " + deposit[j]);
     }
 
     public void Withdrawals(double amount){
@@ -132,7 +127,6 @@ public class Bank {
             withdrawals[j] = amount  * -1;
             j++;
             for (int i = 0; i < withdrawals.length; i++){
-                //System.out.println(withdrawal[i]);
                 withdrawal[i] = withdrawals[i];
             }
         }
