@@ -4,14 +4,14 @@
 
 ## 1. Table of Contents
 ### Module 1
-&emsp;[hello.txt](#hellotxt)   
-&emsp;[RandNum.java](#randnumjava)  
+&emsp;[hello.txt](https://github.com/CodebyLK/CSC211/blob/7e6cf34cbd0bea6f4a77d73eae7ba96881d1a6b0/Module1/hello.txt)   
+&emsp;[RandNum.java](https://github.com/CodebyLK/CSC211/blob/7e6cf34cbd0bea6f4a77d73eae7ba96881d1a6b0/Module1/RandNum.java)  
 
 ### Module 2
-&emsp;[BankApp.java](#bankappjava)
+&emsp;[BankApp.java](https://github.com/CodebyLK/CSC211/blob/7e6cf34cbd0bea6f4a77d73eae7ba96881d1a6b0/Module2/Bank.java)
 
 ### Module 3
-&emsp;[Automobile.java](#automobilejava)
+&emsp;[Automobile.java](https://github.com/CodebyLK/CSC211/blob/7e6cf34cbd0bea6f4a77d73eae7ba96881d1a6b0/Module3/Automobile.java)
 
 ## 2. Program Details
 
