@@ -1,5 +1,3 @@
-/**Create a Shape class as a parent class. Give Shape a variable for number of sides.  It should have a constructor, a getter, and a setter. Use your Circle and Rectangle class from the previous HW as subclasses of Shape. Show how you would use Shape's variable in Circle and Rectangle via the keyword super.  In main, show that a Circle object can use the Shape classes getter method to return the number of sides.*/
-
 import java.util.*;
 
 public class Shape {
