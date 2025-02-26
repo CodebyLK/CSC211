@@ -13,8 +13,10 @@
 ### Module 3
 &emsp;[Automobile.java](https://github.com/CodebyLK/CSC211/blob/7e6cf34cbd0bea6f4a77d73eae7ba96881d1a6b0/Module3/Automobile.java)
 
-## 2. Program Details
+### Module 4
+&emsp;[Shape.java](https://github.com/CodebyLK/CSC211/blob/a06650e78b9669c8c7b5473478f6417307997b7b/Module4/Shape.java)
 
+## 2. Program Details
 ### Module 1
 
 #### hello.txt  
@@ -32,3 +34,8 @@ This program simulates a bank with methods for both deposits and withdrawals. It
 
 #### Automobile.java
 This automobile program demonstrates inheritance. It has an Automobile superclass with methods for accelerate, decelerate, honk, reverse, forward and stop. It also demonstrates the compareTo and equals methods. The program has three subclasses (Car, SportsCar and JunkCar) that extend the superclass. Each subclass includes methods that override the superclass. The main method instantiates an object for each of the subclasses and an array is created to hold each object and demonstrate the methods.
+
+### Module 4
+
+#### Shape.java
+This program demonstrates the Java constructor and getter and setter. The Shape class has a variable (numSides) that sets the number of sides for a shape along with a constructor, a getter and setter. There are two subclasses (Circle and Rectangle) that extend the Shape class. Each subclass contains a method to calculate the area of the shape. The main method creates a new Scanner object and instantiates a new Circle and a new Rectangle object. The main method retrieves the number of sides of the Circle using the getter. Finally, the area methods of both the Circle and Rectangle are called taking in user input and calculating the area of each shape.
