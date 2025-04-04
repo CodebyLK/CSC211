@@ -1,65 +1,79 @@
-import java.awt.*;
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
+import javax.swing.border.EmptyBorder;
 
-public class UserRegistration {
-    public static void main(String[] args) {
-        JFrame frame = new JFrame("User Registration Form");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(400, 300);
-        frame.setLayout(new GridLayout(6, 2));
+public class Registration extends JFrame {
+    public Registration() {
+        JFrame frame = new JFrame("User Registration");
+        JPanel userPanel = new JPanel(new GridLayout(5, 2, 10, 10));
 
-        JLabel nameLabel = new JLabel("Name:");
+        userPanel.add(new JLabel("Name: "));
         JTextField nameField = new JTextField();
-        JLabel emailLabel = new JLabel("Email:");
-        JTextField emailField = new JTextField();
-        JLabel passwordLabel = new JLabel("Password:");
-        JPasswordField passwordField = new JPasswordField();
-        JLabel confirmPasswordLabel = new JLabel("Confirm Password:");
-        JPasswordField confirmPasswordField = new JPasswordField();
-        JButton submitButton = new JButton("Submit");
-        JButton clearButton = new JButton("Clear");
+        userPanel.add(nameField);
 
-        frame.add(nameLabel);
-        frame.add(nameField);
-        frame.add(emailLabel);
-        frame.add(emailField);
-        frame.add(passwordLabel);
-        frame.add(passwordField);
-        frame.add(confirmPasswordLabel);
-        frame.add(confirmPasswordField);
-        frame.add(submitButton);
-        frame.add(clearButton);
+        userPanel.add(new JLabel("Email: "));
+        JTextField emailField = new JTextField();
+        userPanel.add(emailField);
+
+        userPanel.add(new JLabel("Password: "));
+        JPasswordField passwordField = new JPasswordField();
+        userPanel.add(passwordField);
+
+        userPanel.add(new JLabel("Confirm Password: "));
+        JPasswordField confirmPasswordField = new JPasswordField();
+        userPanel.add(confirmPasswordField);
+
+        JButton submitButton = new JButton("Submit");
+        userPanel.add(submitButton);
+
+        JButton clearButton = new JButton("Clear");
+        userPanel.add(clearButton);
+
+        userPanel.setBorder(new EmptyBorder(15, 15, 15, 15));
+
+        frame.add(userPanel, BorderLayout.CENTER);
 
         submitButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String name = nameField.getText();
-                String email = emailField.getText();
-                String password = new String(passwordField.getPassword());
-                String confirmPassword = new String(confirmPasswordField.getPassword());
+                String fillName = nameField.getText();
+                String fillEmail = emailField.getText();
+                String fillPassword = new String(passwordField.getPassword());
+                String fillConfirmPassword = new String(confirmPasswordField.getPassword());
 
-                if (name.isEmpty() || email.isEmpty() || password.isEmpty()) {
-                    JOptionPane.showMessageDialog(frame, "Please fill in all fields.");
-                } else if (!password.equals(confirmPassword)) {
+                if (fillName.isEmpty() || fillEmail.isEmpty() || fillPassword.isEmpty()) {
+                    JOptionPane.showMessageDialog(frame, "Please fill all fields.");
+                }
+                else if (!fillPassword.equals(fillConfirmPassword)) {
                     JOptionPane.showMessageDialog(frame, "Passwords do not match.");
-                } else {
-                    JOptionPane.showMessageDialog(frame, "Registration Successful!");
+                }
+                else {
+                    JOptionPane.showMessageDialog(frame, "Registration Complete!");
                 }
             }
-        });
+    });
 
-        clearButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                nameField.setText("");
-                emailField.setText("");
-                passwordField.setText("");
-                confirmPasswordField.setText("");
-            }
-        });
+    clearButton.addActionListener(new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            nameField.setText("");
+            emailField.setText("");
+            passwordField.setText("");
+            confirmPasswordField.setText("");
+        }
+    });
 
+        frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
+        frame.setSize(400, 225);
         frame.setVisible(true);
+        
+
+    }
+    public static void main(String[]args) {
+        JFrame frame1 = new Registration();
+           
     }
 }
