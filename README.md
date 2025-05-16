@@ -21,7 +21,7 @@
 &emsp;[SimpleProgramTest.java](https://github.com/CodebyLK/CSC211/blob/97a2f85d283ad8942294e8d67ed31d28bdbd3aea/Module5/SimpleProgramTest.java)  
 
 ### Project
-&emsp;[Product.java]()
+&emsp;[Product.java](https://github.com/CodebyLK/CSC211/blob/bbe56dd7b156d56de3bf8845cf793e7e5e3e5df0/Project/Product.java)
 
 
 ## 2. Program Details
